@@ -20,7 +20,7 @@ class MappingsTagLib {
     def allMappingsHolder
 
 
-    def urlMappings = {
+    def urlMappings = { attrs ->
         def mappings = []
         allMappingsHolder.controllers.each {controller ->
             controller.actions.each {action ->
